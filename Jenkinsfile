@@ -10,7 +10,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "34.229.239.44:8081"
+        NEXUS_URL = "54.235.35.133:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "maven-snapshots"
         // Jenkins credential id to authenticate to Nexus OSS
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/kiranpayyavuala/nexus-app.git';
+                    git 'https://github.com/kiranpayyavuala/mavenwar.git';
                 }
             }
         }
